@@ -1,0 +1,43 @@
+{
+  "people": [
+    "DSC_0073.jpg",
+    "IMG_0188.jpg",
+    "IMG_0109.jpg",
+    "IMG_0194.jpg",
+    "IMG_5301.jpg",
+    "P1000308.jpg"
+  ],
+
+  "travel": {
+    "Milan": [
+    ],
+    "San Francisco": [
+    ],
+    "Chicago": [
+    ],
+    "Norway": [
+    ]
+  },
+
+  "life": [
+    "P1010920.jpg",
+    "P1000542.jpg", 
+    "P1010882.jpg",
+    "P1010915.jpg",
+    "P1010930.jpg",
+    "P1020123.jpg",
+    "P1020295.jpg",
+    "P1020763.jpg",
+    "P1020962.jpg"
+  ], 
+
+  "objects": [
+    "IMG_0035.jpg",
+    "IMG_0156.jpg",
+    "IMG_0203.jpg",
+    "IMG_0360.jpg",
+    "IMG_0435.jpg",
+    "P1010452.jpg",
+    "P1020220.jpg"
+  ]
+}

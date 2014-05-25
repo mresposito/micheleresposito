@@ -1,0 +1,34 @@
+@(title: String, javascript: Html = Html(""), navs: Html = _navMain())(content: Html)
+
+<!DOCTYPE html>
+<html lang="en_us">
+  @_head(title) {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/main.min.css")">
+  }
+
+  <body>
+  <div class="header">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="logo">
+          <a href="/">MICHELE RICCARDO ESPOSITO</a>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="navs">
+          <ul class="unstyled">
+          @navs
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @content
+  </body>
+
+  <!-- Le Javascript ================================================== -->
+
+  @_jsLibraries(javascript)
+</html>

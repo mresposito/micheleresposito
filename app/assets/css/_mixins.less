@@ -1,0 +1,25 @@
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.shadow {
+  -webkit-box-shadow: -1px -1px 15px 0px rgba(50, 50, 50, 0.71);
+  -moz-box-shadow:    -1px -1px 15px 0px rgba(50, 50, 50, 0.71);
+  -o-box-shadow:      -1px -1px 15px 0px rgba(50, 50, 50, 0.71);
+  box-shadow:         -1px -1px 15px 0px rgba(50, 50, 50, 0.71);
+}
+
+.backgroundImage(@load) {
+  // background: url(@load) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.outline(@color, @offset: 5px) {
+  outline: solid @color;
+  outline-offset: @offset;
+}

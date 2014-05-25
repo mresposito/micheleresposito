@@ -1,0 +1,24 @@
+@(tabs: List[String], active: String, second: String)
+
+@pills(name: String) = {
+  <div class="nav nounderline">
+    @if(name.toLowerCase == active.toLowerCase) {
+      <a class="active" href="#/@name.toLowerCase" id="@name.toLowerCase">
+        @name.toUpperCase
+      </a>
+    } else {
+      <a href="#/@name.toLowerCase" id="@name.toLowerCase">@name.toUpperCase</a>
+    }
+  </div>
+}
+
+@_navSecond(second)
+<li class="three">
+<div class="float">
+@tabs.init.map { tab =>
+  @pills(tab)
+  <span class="sep">/</span>
+}
+@pills(tabs.last)
+</div>
+</li>

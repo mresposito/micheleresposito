@@ -1,0 +1,22 @@
+@(title: String)
+
+@js = {
+  @helper.requireJs(core = routes.Assets.at("js/require.js").url,
+    module = routes.Assets.at("js/pictures.js").url)
+}
+
+@tassel(name: String, img: String) = {
+  <div class="col-md-6">
+    <div class="tassel">
+      <a href="/@name.toLowerCase">
+        <img src="@img">
+        <p>@name</a>
+      </a>
+    </div>
+  </div>
+}
+
+@main(title + " | Michele Riccardo Esposito", js, _navSecond(title)) {
+  <div class="splash carosel" data-page="@title.toLowerCase">
+  </div>
+}

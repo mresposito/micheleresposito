@@ -1,0 +1,29 @@
+@(active: String = "")
+
+@pills(name: String) = {
+  <div class="nav nounderline">
+    @if(name.toLowerCase == active.toLowerCase) {
+      <a class="active" href="/@name.toLowerCase" id="@name.toLowerCase">
+        @name.toUpperCase
+      </a>
+    } else {
+      <a href="/@name.toLowerCase" id="@name.toLowerCase">@name.toUpperCase</a>
+    }
+  </div>
+}
+<li class="one">
+<div class="float">
+  @_navMain("Photography")
+  </div>
+</li>
+<li class="two">
+<div class="float">
+  @pills("Travel")
+  <span class="sep">/</span>
+  @pills("People")
+  <span class="sep">/</span>
+  @pills("Objects")
+  <span class="sep">/</span>
+  @pills("Life")
+  </div>
+</li>

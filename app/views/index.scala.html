@@ -1,0 +1,135 @@
+@js = {
+  @helper.requireJs(core = routes.Assets.at("js/require.js").url,
+    module = routes.Assets.at("js/index.js").url)
+}
+
+@tassel(name: String, img: String) = {
+<div class="col-md-6">
+  <div class="tassel">
+    <a href="/@name.toLowerCase">
+      <img data-img-src="@img">
+      <p>@name</p>
+    </a>
+  </div>
+</div>
+}
+
+@contact(name: String, icon: String, linkText: String, href: String) = {
+<div class="col-sm-6">
+  <div class="contactt">
+    <i class="fa @icon"></i><br>
+    <strong>@name:</strong><br>
+    <a href="@href">@linkText</a>
+  </div>
+</div>
+}
+
+@main("Michele Riccardo Esposito", js) {
+
+<div class="splash" data-img-src="/assets/img/P1030027.jpg" data-img-style="fixed">
+</div>
+
+<a name="/life"></a>
+<div class="life" id="trigger1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="me">
+          <img data-img-src="@routes.Assets.at("img/IMG_0307.jpg")" width=450px>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <strong>Name:</strong><p>Michele Riccardo Esposito.</p>
+        <strong>Born in:</strong><p>Milan, Italy.</p>
+        <strong>Lives in:</strong><p>San Francisco, CA.</p>
+        <strong>Education and Alma Mater:</strong> 
+        <p>
+          Mathematics &amp Computer Science,
+          University of Illinois at Urbana-Champaign.
+        </p>
+        <strong>Profession:</strong><p>Software Engineer at 
+          <a href="www.coursera.org">Coursera</a>.</p>
+        <strong>Likes:</strong>
+        <p>
+          Climbing, Travelling, Photography. And having fun.
+        </p>
+        <strong>Next trip:</strong>
+        <p>South America: Colombia, Equador and Peru.</p>
+      </div>
+    </div>
+  </div>
+<a name="/work"></a>
+</div>
+
+<div class="work" id="trigger4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <strong>Profession:</strong>
+        <p>
+          Full-Stack Engineer at <a href="www.coursera.org">Coursera</a>.</p>
+        </p>
+        <strong>Previous Experiences:</strong>
+        <p>Software Engineer at <a href="https://flutterapp.com/">Flutter</a>, technology consultant.</p>
+        <strong>Favorite Languages:</strong>
+        <p>
+          Scala, Javascript and Python.
+        </p>
+        <strong>Technologies:</strong> 
+        <p>
+          Play Framework, Require.js, Backbone, ElasticSearch 
+          and MapReduce.
+        </p>
+        <strong>Curriculum Vitae:</strong>
+        <p>
+          Find it 
+          <a href="https://github.com/mresposito/myCV/blob/master/cv.pdf?raw=true">
+            here.
+          </a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="me">
+          <img data-img-src="@routes.Assets.at("img/work.jpg")" width=450px>
+        </div>
+      </div>
+    </div>
+  </div>
+<a id="/photography"></a>
+</div>
+<div class="photography" id="trigger2">
+  <div class="row">
+    @tassel("Travel", "/assets/img/travel.jpg")
+    @tassel("People", "/assets/img/people.jpg")
+  </div>
+  <div class="row">
+    @tassel("Objects", "/assets/img/objects.jpg")
+    @tassel("Life", "/assets/img/life.jpg")
+  </div>
+
+  <a name="/contact"></a>
+  <div id="trigger3"></div>
+</div>
+
+<div class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="@routes.Assets.at("img/contact.jpg")" width=100%>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          @contact("Email", "fa-envelope",
+          "michele@micheleresposito.com", "mailto:michele@micheleresposito.com")
+          @contact("Github", "fa-github", "Engineering", "https://github.com/mresposito")
+        </div>
+        <div class="row">
+          @contact("Facebook", "fa-facebook",
+            "Profile", "https://www.facebook.com/mresposito5")
+          @contact("Twitter", "fa-twitter", "Profile", "https://twitter.com/mresposito5")
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+}

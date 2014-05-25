@@ -1,0 +1,18 @@
+@(title: String)(css:Html = Html(""))
+<head>
+  <meta name="description" content="Michele Riccardo Esposito's Official Homepage. Discover life, photography and work.">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta charset="utf-8">
+
+  <title>@title</title>
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("img/favicon.png")">
+  <!-- Bootstrap -->
+  @if(play.Play.isProd()) {
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  } else {
+    <link href="@routes.Assets.at("css/bootstrap.min.css")" rel="stylesheet" media="screen">
+  }
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  @css
+</head>

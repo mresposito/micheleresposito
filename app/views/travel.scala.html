@@ -1,0 +1,10 @@
+@js = {
+  @helper.requireJs(core = routes.Assets.at("js/require.js").url,
+    module = routes.Assets.at("js/pictures.js").url)
+}
+
+@main("Michele Riccardo Esposito", js,
+  _navThird(List("Milan", "San Francisco", "Naples", "Guatemala"), "", "Travel")) {
+<div class="splash" data-page="travel">
+</div>
+}
