@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
 
 play.Project.playScalaSettings
 
-// requireJsFolder := "js"
-//
-// requireJs += "pictures.js"
-//
-// requireJsShim += "pictures.js"
+requireJsFolder := "js"
+
+requireJs += "pictures.js"
+
+requireJsShim += "pictures.js"
