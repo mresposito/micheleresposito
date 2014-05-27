@@ -1,10 +1,10 @@
 require.config({
   paths: {
-    jquery: "/assets/js/jquery-2.0.3.min",
-    underscore: "/assets/js/underscore-min",
-    tween: "/assets/js/TweenMax.min",
-    scrollmagic: "/assets/js/jquery.scrollmagic.min",
-    backbone: "/assets/js/backbone-min"
+    jquery: "libs/jquery-2.0.3.min",
+    underscore: "libs/underscore-min",
+    tween: "libs/TweenMax.min",
+    scrollmagic: "libs/jquery.scrollmagic.min",
+    backbone: "libs/backbone-min"
   },
   shim: {
     jquery: {
