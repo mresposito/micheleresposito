@@ -39,7 +39,7 @@ require([
 ], function($, _, Backbone, Pictures, Carosel) {
 
   var $el = $(".splash");
-  var url = "https://dl.dropboxusercontent.com/s/z1i0b7n5kdftip2/pictures.json";
+  var url = "/assets/json/pictures.json";
   $.getJSON(url, function(data) {
 
     var model = new Pictures(data);
@@ -67,7 +67,6 @@ require([
       }
     })
 
-    // Start Backbone history a necessary step for bookmarkable URL's
     Backbone.history.start();
   });
 });

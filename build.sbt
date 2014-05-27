@@ -9,3 +9,9 @@ libraryDependencies ++= Seq(
 )     
 
 play.Project.playScalaSettings
+
+requireJsFolder := "js"
+
+requireJs += "index.js"
+
+requireJsShim += "index.js"

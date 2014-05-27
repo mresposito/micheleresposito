@@ -53,7 +53,7 @@ define([
       var $span = $div.find("span").first();
 
       var renderLabel = function(label) {
-        var lowerCase = self.labelId(label)
+        var lowerCase = self.model.labelId(label)
         var template = templates.headerLink(
           {lower: lowerCase, name: label.toUpperCase()});
         $div.append(template);
@@ -67,15 +67,11 @@ define([
       renderLabel(_.last(labels))
     },
 
-    labelId: function(label) {
-      return label.toLowerCase().replace(" ", "");
-    },
-
     createCarosel: function(label) {
       $(this.el).append(templates.carosel({
         name: label
       }));
-      var data = this.model.getData()[label];
+      var data = this.model.getData(label);
       this.renderCarosel(data, $(this.el).find(".carosel").last())
     },
 
@@ -99,7 +95,7 @@ define([
         var pics = tassel[0];
         var name = tassel[1];
 
-        var lower = self.labelId(name);
+        var lower = self.model.labelId(name);
         var url = _.head(pics);
 
         var html = templates.tassel({

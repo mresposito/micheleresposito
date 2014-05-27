@@ -1,43 +1,111 @@
 {
-  "people": [
-    "DSC_0073.jpg",
-    "IMG_0188.jpg",
-    "IMG_0109.jpg",
-    "IMG_0194.jpg",
-    "IMG_5301.jpg",
-    "P1000308.jpg"
-  ],
-
+  "life": [
+    "/assets/img/life/P1000542.jpg", 
+    "/assets/img/life/P1010759.jpg", 
+    "/assets/img/life/P1010882.jpg", 
+    "/assets/img/life/P1010915.jpg", 
+    "/assets/img/life/P1010920.jpg", 
+    "/assets/img/life/P1010930.jpg", 
+    "/assets/img/life/P1020123.jpg", 
+    "/assets/img/life/P1020295.jpg", 
+    "/assets/img/life/P1020763.jpg"
+  ], 
+  "objects": [
+    "/assets/img/objects/IMG_0035.jpg", 
+    "/assets/img/objects/IMG_0156.jpg", 
+    "/assets/img/objects/IMG_0203.jpg", 
+    "/assets/img/objects/IMG_0360.jpg", 
+    "/assets/img/objects/IMG_0435.jpg", 
+    "/assets/img/objects/P1010452.jpg"
+  ], 
   "travel": {
     "Milan": [
+      "/assets/img/travel/milan/DSC_0802.jpg", 
+      "/assets/img/travel/milan/DSC_0207.jpg", 
+      "/assets/img/travel/milan/P1020064.jpg", 
+      "/assets/img/travel/milan/P1020067.jpg"
+    ], 
+    "Norway": [
+      "/assets/img/travel/norway/P1000694.jpg", 
+      "/assets/img/travel/norway/P1000783.jpg", 
+      "/assets/img/travel/norway/P1000833.jpg", 
+      "/assets/img/travel/norway/P1000912.jpg"
+    ], 
+    "New York": [
+      "/assets/img/travel/newyork/P1000437.jpg", 
+      "/assets/img/travel/newyork/P1000447.jpg", 
+      "/assets/img/travel/newyork/P1000454.jpg", 
+      "/assets/img/travel/newyork/P1000473.jpg"
+    ], 
+    "Copenhagen": [
+      "/assets/img/travel/copenhagen/P1000510.jpg", 
+      "/assets/img/travel/copenhagen/P1000531.jpg", 
+      "/assets/img/travel/copenhagen/P1000532.jpg", 
+      "/assets/img/travel/copenhagen/P1000538.jpg"
+    ], 
+    "Chicago": [
+      "/assets/img/travel/Chicago/IMG_0149.jpg",
+      "/assets/img/travel/Chicago/DSC_0018.jpg", 
+      "/assets/img/travel/Chicago/P1010767.jpg",
+      "/assets/img/travel/Chicago/P1010768.jpg",
+      "/assets/img/travel/Chicago/P1010777.jpg"
+    ],
+    "Guatemala": [
+      "/assets/img/travel/guatemala/P1020808.jpg", 
+      "/assets/img/travel/guatemala/P1020917.jpg",
+      "/assets/img/travel/guatemala/P1020933.jpg",
+      "/assets/img/travel/guatemala/P1020942.jpg",
+      "/assets/img/travel/guatemala/P1030010.jpg",
+      "/assets/img/travel/guatemala/P1030030.jpg"
+    ],
+    "Puerto Rico": [
+      "/assets/img/travel/puertorico/P1010503.jpg", 
+      "/assets/img/travel/puertorico/P1010538.jpg",
+      "/assets/img/travel/puertorico/P1010557.jpg",
+      "/assets/img/travel/puertorico/P1010883.jpg",
+      "/assets/img/travel/puertorico/P1020235.jpg"
+    ],
+    "Naples": [
+      "/assets/img/travel/naples/P1010987.jpg", 
+      "/assets/img/travel/naples/P1010994.jpg", 
+      "/assets/img/travel/naples/P1010997.jpg"
     ],
     "San Francisco": [
+      "/assets/img/travel/sanfrancisco/P1010929.jpg",
+      "/assets/img/travel/sanfrancisco/P1000054.jpg",
+      "/assets/img/travel/sanfrancisco/P1000062.jpg",
+      "/assets/img/travel/sanfrancisco/P1000179.jpg",
+      "/assets/img/travel/sanfrancisco/P1010475.jpg",
+      "/assets/img/travel/sanfrancisco/P1010551.jpg",
+      "/assets/img/travel/sanfrancisco/P1010586.jpg",
+      "/assets/img/travel/sanfrancisco/P1010758.jpg",
+      "/assets/img/travel/sanfrancisco/P1010753.jpg"
+    ], 
+    "Lake Tahoe": [
+      "/assets/img/travel/laketahoe/P1010479.jpg", 
+      "/assets/img/travel/laketahoe/P1010481.jpg",
+      "/assets/img/travel/laketahoe/P1010504.jpg",
+      "/assets/img/travel/laketahoe/P1010510.jpg",
+      "/assets/img/travel/laketahoe/P1010514.jpg",
+      "/assets/img/travel/laketahoe/P1010536.jpg"
     ],
-    "Chicago": [
-    ],
-    "Norway": [
+    "Elba Island": [
+      "/assets/img/travel/elba/P1010438.jpg",
+      "/assets/img/travel/elba/DSC_0306.jpg", 
+      "/assets/img/travel/elba/DSC_0309.jpg",
+      "/assets/img/travel/elba/P1010316.jpg",
+      "/assets/img/travel/elba/P1010369.jpg",
+      "/assets/img/travel/elba/P1010391.jpg"
     ]
-  },
-
-  "life": [
-    "P1010920.jpg",
-    "P1000542.jpg", 
-    "P1010882.jpg",
-    "P1010915.jpg",
-    "P1010930.jpg",
-    "P1020123.jpg",
-    "P1020295.jpg",
-    "P1020763.jpg",
-    "P1020962.jpg"
-  ], 
-
-  "objects": [
-    "IMG_0035.jpg",
-    "IMG_0156.jpg",
-    "IMG_0203.jpg",
-    "IMG_0360.jpg",
-    "IMG_0435.jpg",
-    "P1010452.jpg",
-    "P1020220.jpg"
+  }, 
+  "people": [
+    "/assets/img/people/DSC_0073.jpg", 
+    "/assets/img/people/IMG_0109.jpg", 
+    "/assets/img/people/IMG_0188.jpg", 
+    "/assets/img/people/IMG_0194.jpg", 
+    "/assets/img/people/IMG_5301.jpg", 
+    "/assets/img/people/P1000308.jpg", 
+    "/assets/img/people/P1020215.jpg",
+    "/assets/img/life/P1020962.jpg"
   ]
 }
