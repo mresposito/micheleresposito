@@ -32,9 +32,8 @@ require([
     ImgLoader.initialize($("body"));
 
 		var controller = new ScrollMagic();
-	  // build tween
+    /* Tweens for the underlining bar */
 	  var tween = TweenMax.to("#life", 0.1, {borderBottom: "2px solid #292c29"});
-	  // build scene
 	  var scene = new ScrollScene({triggerElement: "#trigger1", duration: 1})
 			.setTween(tween)
 			.addTo(controller);

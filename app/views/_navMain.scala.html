@@ -3,7 +3,7 @@
 @pills(name: String) = {
   <div class="nav nounderline">
     @if(name.toLowerCase == active.toLowerCase) {
-      <a class="active" href="/#/@name.toLowerCase" id="@name.toLowerCase">
+      <a class="active" href="#/@name.toLowerCase" id="@name.toLowerCase">
         @name.toUpperCase
       </a>
     } else {

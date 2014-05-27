@@ -13,7 +13,6 @@ define([
     renderDivImg: function(img) {
       var $img = $(img);
       var url = $img.data('img-src');
-      console.log(url);
       var s = $img.data('img-style');
       var style = "";
       if(s) {
@@ -28,7 +27,6 @@ define([
     renderImg: function(img) {
       var $img = $(img);
       var url = $img.data('img-src');
-      console.log(url);
       $img.attr("src", url);
     }
   }
