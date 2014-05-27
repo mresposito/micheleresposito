@@ -1,9 +1,9 @@
 require.config({
   paths: {
-    jquery: "/assets/js/jquery-2.0.3.min",
-    underscore: "/assets/js/underscore-min",
-    tween: "/assets/js/TweenMax.min",
-    scrollmagic: "/assets/js/jquery.scrollmagic.min"
+    jquery: "http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min",
+    underscore: "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min",
+    tween: "//cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min",
+    scrollmagic: "http://janpaepke.github.io/ScrollMagic/js/jquery.scrollmagic"
   },
   shim: {
     jquery: {
