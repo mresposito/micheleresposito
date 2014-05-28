@@ -13,6 +13,8 @@ play.Project.playScalaSettings
 
 requireJsFolder := "js"
 
-requireJs += "pictures.js"
+requireJsShim += "common.js"
 
-requireJsShim += "pictures.js"
+requireJs += "app/pictures.js"
+
+requireJs += "app/index.js"
