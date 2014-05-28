@@ -1,6 +1,11 @@
 @js = {
-  @helper.requireJs(core = routes.Assets.at("js/require.js").url,
-    module = routes.Assets.at("js-min/pictures").url)
+  @if(play.Play.isProd()) {
+    @helper.requireJs(core = routes.Assets.at("javascripts/require.js").url,
+      module = routes.Assets.at("js-min/pictures").url)
+  } else {
+    @helper.requireJs(core = routes.Assets.at("javascripts/require.js").url,
+      module = routes.Assets.at("js/pictures").url)
+  }
 }
 
 @main("Michele Riccardo Esposito", js,

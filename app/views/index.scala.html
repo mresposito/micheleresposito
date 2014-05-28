@@ -1,6 +1,11 @@
 @js = {
-  @helper.requireJs(core = routes.Assets.at("js/require.js").url,
-    module = routes.Assets.at("js/index").url)
+  @if(play.Play.isProd()) {
+    @helper.requireJs(core = routes.Assets.at("javascripts/require.js").url,
+      module = routes.Assets.at("js-min/index").url)
+  } else {
+    @helper.requireJs(core = routes.Assets.at("javascripts/require.js").url,
+      module = routes.Assets.at("js/index").url)
+  }
 }
 
 @tassel(name: String, img: String) = {
@@ -29,8 +34,8 @@
 <div class="splash" data-img-src="/assets/img/P1030027.jpg" data-img-style="fixed">
 </div>
 
-<a name="/life"></a>
 <div class="life" id="trigger1">
+  <a name="/life"></a>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -58,9 +63,9 @@
       </div>
     </div>
   </div>
-<a name="/work"></a>
 </div>
 
+<a name="/work"></a>
 <div class="work" id="trigger4">
   <div class="container">
     <div class="row">
@@ -95,10 +100,10 @@
       </div>
     </div>
   </div>
-<a id="/photography"></a>
 </div>
-<div class="photography" id="trigger2">
-  <div class="row">
+<div class="photography">
+  <div class="row" id="trigger2">
+  <a id="/photography"></a>
     @tassel("Travel", "/assets/img/travel.jpg")
     @tassel("People", "/assets/img/people.jpg")
   </div>
@@ -107,12 +112,12 @@
     @tassel("Life", "/assets/img/life.jpg")
   </div>
 
-  <a name="/contact"></a>
-  <div id="trigger3"></div>
 </div>
 
 <div class="contact">
+  <a name="/contact"></a>
   <div class="container">
+  <div id="trigger3"></div>
     <div class="row">
       <div class="col-md-6">
         <img src="@routes.Assets.at("img/contact.jpg")" width=100%>
@@ -126,7 +131,8 @@
         <div class="row">
           @contact("Facebook", "fa-facebook",
             "Profile", "https://www.facebook.com/mresposito5")
-          @contact("Twitter", "fa-twitter", "Profile", "https://twitter.com/mresposito5")
+          @contact("LinkedIn", "fa-linkedin",
+            "Profile", "https://www.linkedin.com/pub/michele-r-esposito/45/550/b01")
         </div>
       </div>
     </div>
