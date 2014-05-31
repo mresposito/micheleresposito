@@ -24,8 +24,12 @@ object Application extends Controller with Logging {
   }
 
   def redirect(url: String) = Action { implicit request => 
-    val ip = request.remoteAddress
-    logger.error(s"Ip address: ${ip}")
+    try {
+      val ip = request.headers("x-forwarded-for")
+      logger.error(s"Ip address: ${ip}")
+    } catch {
+      case e: Exception => () 
+    }
     val result = java.net.URLDecoder.decode(url, "UTF-8")
     Redirect(result) 
   }
