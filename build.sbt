@@ -6,7 +6,8 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  filters
+  filters,
+  "com.typesafe" %% "scalalogging-slf4j" % "1.0.1"
 )     
 
 play.Project.playScalaSettings
