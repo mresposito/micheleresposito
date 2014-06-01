@@ -4,8 +4,17 @@
       module = routes.Assets.at("js-min/app/index").url)
   } else {
     @helper.requireJs(core = routes.Assets.at("javascripts/require.js").url,
-      module = routes.Assets.at("js/app/index").url)
+      module = routes.Assets.at("js/index").url)
   }
+}
+
+@triangle = {
+  <div class="row">
+    <div class="col-md-1 centered">
+      <div class="triangle">
+      </div>
+    </div>
+  </div>
 }
 
 @tassel(name: String, img: String) = {
@@ -35,6 +44,7 @@
 </div>
 
 <div class="life" id="trigger1">
+  @triangle
   <a name="/life"></a>
   <div class="container">
     <div class="row">
@@ -67,6 +77,7 @@
 
 <a name="/work"></a>
 <div class="work" id="trigger4">
+  @triangle
   <div class="container">
     <div class="row">
       <div class="col-md-6">

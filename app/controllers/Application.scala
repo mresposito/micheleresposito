@@ -33,4 +33,8 @@ object Application extends Controller with Logging {
     val result = java.net.URLDecoder.decode(url, "UTF-8")
     Redirect(result) 
   }
+
+  def calendar = Action {
+    Ok(views.html.calendar())
+  }
 }

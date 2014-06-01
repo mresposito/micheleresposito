@@ -103,6 +103,7 @@ body {
 
 .splash {
   height: 100%;
+  border-bottom: 2px solid white;
 }
 
 .slide {
@@ -123,9 +124,15 @@ body {
 }
 
 .work {
-  background-color: #2089DB;
+  @backgroundColor: #2089DB;
+  .triangle {
+    background-color: @backgroundColor;
+  }
+  background-color: @backgroundColor;
   color: white;
-  padding-top: 140px;
+  .container {
+    padding-top: 140px;
+  }
   height: 95%;
   box-shadow: inset 3px 5px 8px rgba(0,0,0,0.3);
 
@@ -213,3 +220,27 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
 }
+
+
+.centered {
+  position: relative;
+  float: none;
+  margin: 0 auto;
+  @media only screen and (max-device-width: 480px) {
+    width: 8.33333%;
+  }
+}
+
+.triangle {
+  background: white;
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: -10px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
