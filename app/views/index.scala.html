@@ -9,12 +9,14 @@
 }
 
 @triangle = {
+<div class="container">
   <div class="row">
     <div class="col-md-1 centered">
       <div class="triangle">
       </div>
     </div>
   </div>
+</div>
 }
 
 @tassel(name: String, img: String) = {
@@ -43,10 +45,10 @@
 <div class="splash" data-img-src="/assets/img/P1030027.jpg" data-img-style="fixed">
 </div>
 
-<div class="life" id="trigger1">
+<div class="life section">
+  <a class="anchor" name="/life" id="trigger1"></a>
   @triangle
-  <a name="/life"></a>
-  <div class="container">
+  <div class="container content">
     <div class="row">
       <div class="col-md-6">
         <div class="me">
@@ -75,10 +77,10 @@
   </div>
 </div>
 
-<a name="/work"></a>
-<div class="work" id="trigger4">
+<div class="work section">
+  <a class="anchor" name="/work" id="trigger4"></a>
   @triangle
-  <div class="container">
+  <div class="container content">
     <div class="row">
       <div class="col-md-6">
         <strong>Profession:</strong>
@@ -113,8 +115,8 @@
   </div>
 </div>
 <div class="photography">
-  <div class="row" id="trigger2">
-  <a id="/photography"></a>
+  <a class="anchor" name="/photography" id="trigger2"></a>
+  <div class="row">
     @tassel("Travel", "/assets/img/travel.jpg")
     @tassel("People", "/assets/img/people.jpg")
   </div>
@@ -126,9 +128,8 @@
 </div>
 
 <div class="contact">
-  <a name="/contact"></a>
+  <a name="/contact" id="trigger3"></a>
   <div class="container">
-  <div id="trigger3"></div>
     <div class="row">
       <div class="col-md-6">
         <img src="@routes.Assets.at("img/contact.jpg")" width=100%>

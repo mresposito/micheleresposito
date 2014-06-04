@@ -10,8 +10,9 @@ html, body {
   height: 100%;
 }
 
+@navbarHeight: 90px;
 body {
-  padding-top: 90px;
+  padding-top: @navbarHeight;
 }
 
 .header {
@@ -110,17 +111,23 @@ body {
   padding: 50px;
 }
 
-.life {
-  .container {
+.section {
+
+  position: relative;
+  height: 95%;
+  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+
+  .container.content {
     padding-top: 140px;
   }
-  height: 95%;
-
   .me {
     width: 450px;
     .shadow
   }
-  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+a.anchor {
+  position: absolute;
+  top: -1 * @navbarHeight;
 }
 
 .work {
@@ -130,7 +137,7 @@ body {
   }
   background-color: @backgroundColor;
   color: white;
-  .container {
+  .container.content {
     padding-top: 140px;
   }
   height: 95%;
@@ -139,15 +146,10 @@ body {
   a {
     color: black;
   }
-
-  .me {
-    width: 450px;
-    .shadow
-  }
-  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
 
 .photography {
+  position: relative;
   height: auto;
   background-color: black;
   .col-md-6 { padding: 0px!important; margin: 0px!important; }
